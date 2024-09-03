@@ -8,12 +8,15 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage 
 {
+	@FindBy(linkText = "Products")
+	private WebElement productLink;
+	
 	@FindBy(linkText = "Organizations")
 	private WebElement orgLink;
 	
 	@FindBy(linkText = "Contacts")
 	private WebElement contactLink;
-	
+
 	@FindBy(linkText = "Campaigns")
 	private WebElement campaignLink;
 	
@@ -35,6 +38,9 @@ public class HomePage
 		PageFactory.initElements(driver, this); //current class object
 	}
 	
+	public WebElement getProductLink() {
+		return productLink;
+	}
 
 	public WebElement getOrgLink() {
 		return orgLink;
