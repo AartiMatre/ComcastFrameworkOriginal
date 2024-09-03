@@ -1,0 +1,7 @@
+{
+   "browser":"chrome",
+    "url":"http://localhost:8888",
+    "un": "admin",
+    "pw" :"test@123",
+    "timeOut":20
+}
